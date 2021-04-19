@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Yandex Metrika Screenshot
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.2
 // @description  Screenshot mode
 // @author       popstas
 // @match        https://metrika.yandex.ru/*
@@ -36,6 +36,7 @@
 .screenshot .data-table__constructor-row,
 .screenshot .data-table__cell_type_dimension .data-table__controls,
 .screenshot .data-table__controls .hint-icon,
+.screenshot .data-table__more-row,
 
 .screenshot .main-menu,
 .screenshot .header2,
@@ -45,15 +46,21 @@
 
 body.screenshot {
 min-width: 800px;
-overflow-y: hidden;
+overflow-y: auto;
 }
 
 .screenshot .report-page__header {
-margin-top: -52px;
-margin-left: 191px;
+  margin-top: -52px;
+  /*margin-left: 191px;*/
 }
 .screenshot .report-page__report-headline {
-font-size: 15px !important;
+  font-size: 15px !important;
+  text-align: right;
+}
+
+/* site name */
+.screenshot .b-page__counter {
+  padding-left: 420px;
 }
 
 .screenshot .report-page__toolbar {
