@@ -1,12 +1,12 @@
 // ==UserScript==
 // @name         Yandex Metrika Screenshot
 // @namespace    http://tampermonkey.net/
-// @version      0.2.1
+// @version      0.2.2
 // @description  Screenshot mode
 // @author       popstas
 // @match        https://metrika.yandex.ru/*
 // @grant        GM_addStyle
-// @updateURL    https://raw.githubusercontent.com/viasite/userscript-yandex-metrika-screenshot/master/dist/yandex-metrika-screenshot.user.js
+// @updateURL    https://github.com/viasite/userscript-yandex-metrika-screenshot/raw/master/yandex-metrika-screenshot.user.js
 // ==/UserScript==
 
 /*
