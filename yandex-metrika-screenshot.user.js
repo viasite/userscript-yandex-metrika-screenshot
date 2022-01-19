@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Yandex Metrika Screenshot
 // @namespace    http://tampermonkey.net/
-// @version      0.2
+// @version      0.2.1
 // @description  Screenshot mode
 // @author       popstas
 // @match        https://metrika.yandex.ru/*
@@ -37,6 +37,13 @@
 .screenshot .data-table__cell_type_dimension .data-table__controls,
 .screenshot .data-table__controls .hint-icon,
 .screenshot .data-table__more-row,
+.screenshot .report-support__link,
+.screenshot .icon__help3,
+.robot-setting-dropdown,
+
+/* filters */
+.segments-list__group_empty_yes,
+.add-filter-button,
 
 .screenshot .main-menu,
 .screenshot .header2,
